@@ -10,9 +10,9 @@ A full-stack web application for rating and reviewing stores, featuring three us
 ## Features
 
 - **User Roles:**
-  - **Admin:** Manage users and stores, view platform statistics
-  - **Store Owner:** Register/login, manage their own store, view ratings
-  - **Normal User:** Register/login, browse stores, rate and review stores
+  - **Admin:** Login, manage users and stores, view platform statistics
+  - **Store Owner:** Login,change password, manage their own store, view ratings
+  - **Normal User:** Register/login,change password, browse stores, rate and review stores
 
 - **Authentication:**
   - Secure JWT-based authentication
