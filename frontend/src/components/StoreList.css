@@ -1,0 +1,46 @@
+.store-list-container {
+    margin: 2rem 0;
+}
+
+.store-list-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.filter-input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+}
+
+.stores-table {
+    min-width: 100%;
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.stores-table thead {
+    background-color: #e5e7eb;
+}
+
+.stores-table th {
+    cursor: pointer;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.stores-table tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.stores-table td {
+    padding: 0.75rem;
+}
+
+.clickable-row:hover {
+    cursor: pointer;
+    background-color: #f0f2f5;
+} 

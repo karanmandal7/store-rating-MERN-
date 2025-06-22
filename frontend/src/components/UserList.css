@@ -1,0 +1,46 @@
+.user-list-container {
+    margin: 2rem 0; /* my-8 */
+}
+
+.user-list-container h2 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.filter-input {
+    margin-bottom: 1rem; /* mb-4 */
+    padding: 0.5rem; /* p-2 */
+    border: 1px solid #d1d5db; /* border */
+    border-radius: 0.25rem; /* rounded */
+}
+
+.users-table {
+    min-width: 100%;
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.users-table thead {
+    background-color: #e5e7eb; /* bg-gray-200 */
+}
+
+.users-table th {
+    cursor: pointer;
+    padding: 0.75rem; /* p-2 */
+    border-bottom: 1px solid #ddd;
+}
+
+.users-table tr {
+    border-bottom: 1px solid #e5e7eb; /* border-b */
+}
+
+.users-table td {
+    padding: 0.75rem; /* p-2 */
+}
+
+.clickable-row:hover {
+    cursor: pointer;
+    background-color: #f0f2f5;
+} 

@@ -1,0 +1,51 @@
+.store-owner-dashboard {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.store-owner-dashboard h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.store-details-card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.store-details-card h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.ratings-table {
+    min-width: 100%;
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.ratings-table th, .ratings-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.change-password-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    float: right;
+}
+
+.change-password-button:hover {
+    background-color: #0056b3;
+} 

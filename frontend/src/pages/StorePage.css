@@ -1,0 +1,99 @@
+.store-page-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.store-page-container h1 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+}
+
+.rating-section h2 {
+    font-size: 1.5rem; /* text-2xl */
+    margin-top: 1rem; /* mt-4 */
+}
+
+.star {
+    cursor: pointer;
+    font-size: 2.25rem; /* text-3xl */
+    color: #cbd5e0; /* text-gray-400 */
+    display: inline-block;
+}
+
+.star.selected {
+    color: #f59e0b; /* text-yellow-500 */
+}
+
+.submit-rating-btn {
+    margin-top: 0.5rem; /* mt-2 */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    background-color: #3b82f6; /* bg-blue-500 */
+    color: white;
+    border: none;
+    border-radius: 0.25rem; /* rounded */
+    cursor: pointer;
+}
+
+.search-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.rate-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: auto; /* Pushes the button to the right */
+}
+
+.rate-button:hover {
+    background-color: #0056b3;
+}
+
+.stores-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.store-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.store-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.store-card h3 {
+    margin-top: 0;
+} 

@@ -1,0 +1,16 @@
+.star-rating button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 5px;
+}
+
+.star-rating .on {
+    color: #fdd835; /* A gold/yellow color for on state */
+}
+
+.star-rating .off {
+    color: #ccc; /* A light grey for off state */
+} 

@@ -1,0 +1,50 @@
+.header {
+    background-color: #2d3748; /* gray-800 */
+    color: white;
+    padding: 1rem;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+    text-decoration: none;
+    color: white;
+}
+
+.header nav a {
+    margin-right: 1rem; /* mr-4 */
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    padding: 0.25rem 0.75rem; /* px-3 py-1 */
+    border-radius: 0.25rem; /* rounded */
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-logout {
+    background-color: #e53e3e; /* red-500 */
+}
+
+.btn-login {
+    background-color: #4299e1; /* blue-500 */
+    text-decoration: none;
+} 
