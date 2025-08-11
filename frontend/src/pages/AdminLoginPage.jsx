@@ -36,7 +36,7 @@ const AdminLoginPage = () => {
                     <button type="submit" className="login-button">Login</button>
                 </form>
                 <hr/>
-                <p>Not an Admin? Go to <Link to="/">Home Page</Link></p>
+                <p>New Admin? Go to <Link to="/signup/admin">Sign Up</Link></p>
             </div>
         </div>
     );

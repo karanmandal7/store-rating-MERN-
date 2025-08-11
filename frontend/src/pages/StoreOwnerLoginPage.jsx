@@ -35,7 +35,7 @@ const StoreOwnerLoginPage = () => {
                     </div>
                     <button type="submit" className="login-button">Login</button>
                 </form>
-                <p>New Store Owner? <Link to="/signup/store">Create an account</Link></p>
+                <p>New Store Owner? <Link to="/signup/store-owner">Create an account</Link></p>
                 <hr />
                 <p>Login as a <Link to="/login/user">User</Link> or <Link to="/login/admin">Admin</Link></p>
             </div>

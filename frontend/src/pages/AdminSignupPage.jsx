@@ -4,7 +4,7 @@ import axios from 'axios';
 import AuthContext from '../context/AuthContext';
 import './SignupPage.css';
 
-const UserSignupPage = () => {
+const AdminSignupPage = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -15,7 +15,7 @@ const UserSignupPage = () => {
 
     useEffect(() => {
         if (user) {
-            navigate('/stores');
+            navigate('/admin/dashboard');
         }
     }, [user, navigate]);
 
@@ -33,7 +33,13 @@ const UserSignupPage = () => {
         e.preventDefault();
         if (!validate()) return;
         try {
-            await axios.post('/api/auth/register', { name, email, password, address, role: 'Normal User' });
+            await axios.post('/api/auth/register', { 
+                name, 
+                email, 
+                password, 
+                address, 
+                role: 'Admin' 
+            });
             await login(email, password);
         } catch (error) {
             const errorMessage = error.response?.data?.message || 'Registration failed. Please try again.';
@@ -44,11 +50,10 @@ const UserSignupPage = () => {
     return (
         <div className="signup-page">
             <div className="signup-container">
-                <h1 className="signup-title">User Signup</h1>
+                <h1 className="signup-title">Administrator Signup</h1>
                 <form onSubmit={submitHandler} className="signup-form" noValidate>
-                     {/* Form groups for name, email, password, address */}
                     <div className="form-group">
-                        <label>Name</label>
+                        <label>Administrator Name</label>
                         <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
                         {errors.name && <p className="error-message">{errors.name}</p>}
                     </div>
@@ -66,12 +71,12 @@ const UserSignupPage = () => {
                         <textarea value={address} onChange={(e) => setAddress(e.target.value)} rows="3"></textarea>
                         {errors.address && <p className="error-message">{errors.address}</p>}
                     </div>
-                    <button type="submit" className="signup-button">Sign Up</button>
+                    <button type="submit" className="signup-button">Sign Up as Administrator</button>
                 </form>
-                <p>Already have an account? <Link to="/login/user">Login</Link></p>
+                <p>Already have an account? <Link to="/login/admin">Login as Administrator</Link></p>
             </div>
         </div>
     );
 };
 
-export default UserSignupPage; 
+export default AdminSignupPage;

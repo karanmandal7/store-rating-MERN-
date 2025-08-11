@@ -4,6 +4,8 @@ import UserLoginPage from './pages/UserLoginPage';
 import StoreOwnerLoginPage from './pages/StoreOwnerLoginPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import UserSignupPage from './pages/UserSignupPage';
+import StoreOwnerSignupPage from './pages/StoreOwnerSignupPage';
+import AdminSignupPage from './pages/AdminSignupPage';
 import StorePage from './pages/StorePage';
 import StoreDetailPage from './pages/StoreDetailPage';
 import AdminDashboard from './pages/AdminDashboard';
@@ -21,6 +23,8 @@ function App() {
       <Route path="/login/store" element={<StoreOwnerLoginPage />} />
       <Route path="/login/admin" element={<AdminLoginPage />} />
       <Route path="/signup/user" element={<UserSignupPage />} />
+      <Route path="/signup/store-owner" element={<StoreOwnerSignupPage />} />
+      <Route path="/signup/admin" element={<AdminSignupPage />} />
 
       {/* Protected Routes */}
       <Route path="/stores" element={<ProtectedRoute><StorePage /></ProtectedRoute>} />
